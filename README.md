@@ -1,4 +1,5 @@
-# Домашнее задание к занятию "`Тестовое задание для лектора курса “DevOps-инженер”`" - `Григорьев Дмитрий`
+# `Тестовое задание для лектора курса “DevOps-инженер”` - `Григорьев Дмитрий`
+# Домашнее задание к занятию "`Работа с данными (DDL/DML)`" - `Григорьев Дмитрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -43,24 +44,23 @@
 1.8. `При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)`
 Решение: скриншот 1.8
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+SELECT User FROM mysql.user;
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'%';
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'sys_temp'@'%';
 ```
 
 `При необходимости прикрепитe сюда скриншоты`
 `![Название скриншота 1](ссылка на скриншот 1)`
-[скриншот 1.1] (https://drive.google.com/file/d/1cgQxSGXPvI_UCxwmpU566tgJzGH6roJI/view?usp=sharing)
-[скриншот 1.2] (https://drive.google.com/file/d/18OvtIsu85MTcPGH66xFwF-qHXOzDriMA/view?usp=sharing)
-[скриншот 1.3] (https://drive.google.com/file/d/10poNIB1uy4ZzWdGTytASoVhL5_MXktMI/view?usp=sharing)
-[скриншот 1.4] (https://drive.google.com/file/d/18pJ96ttswtqSey46qTPsm8cQFUftRwc1/view?usp=sharing)
-[скриншот 1.5] (https://drive.google.com/file/d/1PQ4W2GJA2xYsUteReWYFOgnU2VKnsdRP/view?usp=sharing)
-[скриншот 1.6] (https://drive.google.com/file/d/1IXJCCtyLhFDPhkHFTSfN7Ma9TKaeL548/view?usp=sharing)
-[скриншот 1.6.1] (https://drive.google.com/file/d/17Wn6Yrd2tU3XcpopqBWCLd0ifQIAL_9U/view?usp=sharing)
-[скриншот 1.7] (https://drive.google.com/file/d/1UiJLRaDFo6d5P00tvbr-snhonPeYwjyk/view?usp=sharing)
-[скриншот 1.8] (https://drive.google.com/file/d/16f2-M6tZ6wwNBsejyjoqDjqu_kLpwRf6/view?usp=sharing)
+![скриншот 1.1] (https://drive.google.com/file/d/1cgQxSGXPvI_UCxwmpU566tgJzGH6roJI/view?usp=sharing)
+![скриншот 1.2] (https://drive.google.com/file/d/18OvtIsu85MTcPGH66xFwF-qHXOzDriMA/view?usp=sharing)
+![скриншот 1.3] (https://drive.google.com/file/d/10poNIB1uy4ZzWdGTytASoVhL5_MXktMI/view?usp=sharing)
+![скриншот 1.4] (https://drive.google.com/file/d/18pJ96ttswtqSey46qTPsm8cQFUftRwc1/view?usp=sharing)
+![скриншот 1.5] (https://drive.google.com/file/d/1PQ4W2GJA2xYsUteReWYFOgnU2VKnsdRP/view?usp=sharing)
+![скриншот 1.6] (https://drive.google.com/file/d/1IXJCCtyLhFDPhkHFTSfN7Ma9TKaeL548/view?usp=sharing)
+![скриншот 1.6.1] (https://drive.google.com/file/d/17Wn6Yrd2tU3XcpopqBWCLd0ifQIAL_9U/view?usp=sharing)
+![скриншот 1.7] (https://drive.google.com/file/d/1UiJLRaDFo6d5P00tvbr-snhonPeYwjyk/view?usp=sharing)
+![скриншот 1.8] (https://drive.google.com/file/d/16f2-M6tZ6wwNBsejyjoqDjqu_kLpwRf6/view?usp=sharing)
 
 ---
 
@@ -71,11 +71,21 @@
 
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+USE sakila;
+#SHOW TABLES;
+SELECT 
+	t.table_name AS 'Название таблицы',
+    c.column_name AS 'Название первичного ключа'
+FROM
+	information_schema.tables t
+LEFT JOIN
+	information_schema.key_column_usage c
+    ON t.table_name = c.table_name
+    AND t.table_schema = c.table_schema
+    AND c.constraint_name = 'PRIMARY'
+WHERE
+	t.table_schema = 'sakila'
+    AND t.table_type = 'BASE TABLE';
 ```
 
 `При необходимости прикрепитe сюда скриншоты
@@ -87,44 +97,22 @@
 
 ### Задание 3
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+3.1. `Уберите у пользователя sys_temp права на внесение, изменение и удаление данных из базы sakila.`
+Решение: скриншот 3.1
+3.2. `Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)`
+Решение: скриншот 3.2
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'sys_temp'@'%';
+FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON sakila.* TO 'sys_temp'@'%';
+FLUSH PRIVILEGES;
+REVOKE INSERT, UPDATE, DELETE ON sakila.* FROM 'sys_temp'@'%';
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'sys_temp'@'%';
 ```
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
-
-### Задание 4
-
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+![скриншот 3.1] (https://drive.google.com/file/d/1JhHVr3Sa-H57jU0Hiq_VtkSqysJKgMWT/view?usp=sharing)
+![скриншот 3.2] (https://drive.google.com/file/d/1Tfh4I49XuzRxHKxiwBEKG4r-KQXGuF8m/view?usp=sharing)
