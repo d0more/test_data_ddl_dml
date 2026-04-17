@@ -46,7 +46,7 @@ FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'sys_temp'@'%';
 ```
 
-## <a id="link1">Скриншоты задания №1</a>
+#### <a id="link1">Скриншоты задания №1</a>
 
 [скриншот 1.1](https://drive.google.com/file/d/1cgQxSGXPvI_UCxwmpU566tgJzGH6roJI/view?usp=sharing)
 
@@ -93,7 +93,7 @@ WHERE
     AND t.table_type = 'BASE TABLE';
 ```
 
-## <a id="link2">Скриншоты задания №2</a>
+#### <a id="link2">Скриншоты задания №2</a>
 
 [скриншот 2](https://drive.google.com/file/d/1LvKUSeCOhXsqK2swLn7TmBHkr2cuGvEc/view?usp=sharing)
 
@@ -119,7 +119,7 @@ FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'sys_temp'@'%';
 ```
 
-## <a id="link3">Скриншоты задания №3</a>
+#### <a id="link3">Скриншоты задания №3</a>
 
 [скриншот 3.1](https://drive.google.com/file/d/1JhHVr3Sa-H57jU0Hiq_VtkSqysJKgMWT/view?usp=sharing)
 
