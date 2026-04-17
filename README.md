@@ -71,32 +71,32 @@ SHOW GRANTS FOR 'sys_temp'@'%';
 `При необходимости прикрепитe сюда скриншоты`
 `![Название скриншота 1](ссылка на скриншот 1)`
 
-[скриншот 1.1] (https://drive.google.com/file/d/1cgQxSGXPvI_UCxwmpU566tgJzGH6roJI/view?usp=sharing)
+[скриншот 1.1](https://drive.google.com/file/d/1cgQxSGXPvI_UCxwmpU566tgJzGH6roJI/view?usp=sharing)
 
-[скриншот 1.2] (https://drive.google.com/file/d/18OvtIsu85MTcPGH66xFwF-qHXOzDriMA/view?usp=sharing)
+[скриншот 1.2](https://drive.google.com/file/d/18OvtIsu85MTcPGH66xFwF-qHXOzDriMA/view?usp=sharing)
 
-[скриншот 1.3] (https://drive.google.com/file/d/10poNIB1uy4ZzWdGTytASoVhL5_MXktMI/view?usp=sharing)
+[скриншот 1.3](https://drive.google.com/file/d/10poNIB1uy4ZzWdGTytASoVhL5_MXktMI/view?usp=sharing)
 
-[скриншот 1.4] (https://drive.google.com/file/d/18pJ96ttswtqSey46qTPsm8cQFUftRwc1/view?usp=sharing)
+[скриншот 1.4](https://drive.google.com/file/d/18pJ96ttswtqSey46qTPsm8cQFUftRwc1/view?usp=sharing)
 
-[скриншот 1.5] (https://drive.google.com/file/d/1PQ4W2GJA2xYsUteReWYFOgnU2VKnsdRP/view?usp=sharing)
+[скриншот 1.5](https://drive.google.com/file/d/1PQ4W2GJA2xYsUteReWYFOgnU2VKnsdRP/view?usp=sharing)
 
-[скриншот 1.6] (https://drive.google.com/file/d/1IXJCCtyLhFDPhkHFTSfN7Ma9TKaeL548/view?usp=sharing)
+[скриншот 1.6](https://drive.google.com/file/d/1IXJCCtyLhFDPhkHFTSfN7Ma9TKaeL548/view?usp=sharing)
 
-[скриншот 1.6.1] (https://drive.google.com/file/d/17Wn6Yrd2tU3XcpopqBWCLd0ifQIAL_9U/view?usp=sharing)
+[скриншот 1.6.1](https://drive.google.com/file/d/17Wn6Yrd2tU3XcpopqBWCLd0ifQIAL_9U/view?usp=sharing)
 
-[скриншот 1.7] (https://drive.google.com/file/d/1UiJLRaDFo6d5P00tvbr-snhonPeYwjyk/view?usp=sharing)
+[скриншот 1.7](https://drive.google.com/file/d/1UiJLRaDFo6d5P00tvbr-snhonPeYwjyk/view?usp=sharing)
 
-[скриншот 1.8] (https://drive.google.com/file/d/16f2-M6tZ6wwNBsejyjoqDjqu_kLpwRf6/view?usp=sharing)
+[скриншот 1.8](https://drive.google.com/file/d/16f2-M6tZ6wwNBsejyjoqDjqu_kLpwRf6/view?usp=sharing)
 
 
 ---
 
 ### Задание 2
 
-2. `Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)`
-Решение: скриншот 2
+#### 2. `Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)`
 
+Решение: скриншот 2
 
 ```
 USE sakila;
@@ -118,16 +118,19 @@ WHERE
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 2](ссылка на скриншот 2)`
-![скриншот 2] (https://drive.google.com/file/d/1LvKUSeCOhXsqK2swLn7TmBHkr2cuGvEc/view?usp=sharing)
 
+[скриншот 2](https://drive.google.com/file/d/1LvKUSeCOhXsqK2swLn7TmBHkr2cuGvEc/view?usp=sharing)
 
 ---
 
 ### Задание 3
 
-3.1. `Уберите у пользователя sys_temp права на внесение, изменение и удаление данных из базы sakila.`
+#### 3.1. `Уберите у пользователя sys_temp права на внесение, изменение и удаление данных из базы sakila.`
+
 Решение: скриншот 3.1
-3.2. `Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)`
+
+#### 3.2. `Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)`
+
 Решение: скриншот 3.2
 
 ```
@@ -142,5 +145,7 @@ SHOW GRANTS FOR 'sys_temp'@'%';
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
-![скриншот 3.1] (https://drive.google.com/file/d/1JhHVr3Sa-H57jU0Hiq_VtkSqysJKgMWT/view?usp=sharing)
-![скриншот 3.2] (https://drive.google.com/file/d/1Tfh4I49XuzRxHKxiwBEKG4r-KQXGuF8m/view?usp=sharing)
+
+![скриншот 3.1](https://drive.google.com/file/d/1JhHVr3Sa-H57jU0Hiq_VtkSqysJKgMWT/view?usp=sharing)
+
+![скриншот 3.2](https://drive.google.com/file/d/1Tfh4I49XuzRxHKxiwBEKG4r-KQXGuF8m/view?usp=sharing)
